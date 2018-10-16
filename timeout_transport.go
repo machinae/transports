@@ -6,9 +6,10 @@ import (
 	"time"
 )
 
-//TimeoutTransport enforces a timeout on all requests
+// TimeoutTransport enforces a timeout on all requests
 type TimeoutTransport struct {
 	http.RoundTripper
+
 	// Timeout on all requests with this transport
 	Timeout time.Duration
 }
